@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./assets/img/icon.svg" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/script.js" ></script>
+
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <div class="calc">
+
+        <div class="calc-result">
+            <input type="text" id="result" disabled />
+        </div>
+
+        <div class="calc-content">
+
+            <div class="calc-content-row">
+                <button onclick="calcular('operacao', 'c')" class="calc-content-row-btn large-width btn-clear">C</button>
+                <button onclick="calcular('operacao', '/')" class="calc-content-row-btn">/</button>
+                <button onclick="calcular('operacao', '*')" class="calc-content-row-btn">X</button>
+            </div>
+
+            <div class="calc-content-row">
+                <button onclick="calcular('valor', 7)" class="calc-content-row-btn">7</button>
+                <button onclick="calcular('valor', 8)" class="calc-content-row-btn">8</button>
+                <button onclick="calcular('valor', 9)" class="calc-content-row-btn">9</button>
+                <button onclick="calcular('operacao', '-')" class="calc-content-row-btn">-</button>
+            </div>
+
+            <div class="calc-content-row">
+                <button onclick="calcular('valor', 4)" class="calc-content-row-btn">4</button>
+                <button onclick="calcular('valor', 5)" class="calc-content-row-btn">5</button>
+                <button onclick="calcular('valor', 6)" class="calc-content-row-btn">6</button>
+                <button onclick="calcular('operacao', '+')" class="calc-content-row-btn">+</button>
+            </div>
+
+            <div class="calc-content-row2">
+
+                <div class="calc-content-row2-block">
+                    
+                    <div class="calc-content-row padding-right">
+                        <button onclick="calcular('valor', 1)" class="calc-content-row-btn">1</button>
+                        <button onclick="calcular('valor', 2)" class="calc-content-row-btn">2</button>
+                        <button onclick="calcular('valor', 3)" class="calc-content-row-btn">3</button>
+                    </div>
+
+                    <div class="calc-content-row padding-right">
+                        <button onclick="calcular('valor', 0)" class="calc-content-row-btn large-width">0</button>
+                        <button onclick="calcular('operacao', '.')" class="calc-content-row-btn">.</button>
+                    </div>
+
+                </div>
+
+                <div onclick="calcular('operacao', '=')" class="calc-content-row-btn large-heigth">=</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
